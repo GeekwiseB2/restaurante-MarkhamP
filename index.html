@@ -4,13 +4,51 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Restaurante</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-	<div class="row">
-	  <div id="carousel-restaurante" class="carousel slide carousel-fade" data-ride="carousel">
+
+
+
+
+	<div class="row container-fluid">
+
+		<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+	    <div class="container-fluid">
+	      <!-- resizing becomes hamburger menu -->
+	      <div class="navbar-header">
+	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	          <span class="sr-only">Toggle navigation</span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	          <span class="icon-bar"></span>
+	        </button>
+	        <a class="navbar-brand" target="_blank" href="#">
+	            <img id="restaurante-brand" alt="Brand" title="Restaurante Brand" src="img/name-01.png">
+	        </a>
+	      </div>
+	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	        <ul class="nav navbar-nav pull-right">
+	          <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+	          <li><a href="#about">Our Story</a></li>
+					  <li><a href="#review">Review</a></li>
+	          <li><a href="#menu">Menu</a></li>
+	          <li><a href="#contact">Contact Us</a></li>
+					</ul>
+	      </div>
+		  </div>
+		</nav>
+
+
+
+
+	  <div id="carousel-restaurante" class="carousel slide carousel-fade">
 	    <!-- Indicators -->
 	    <ol class="carousel-indicators">
 	      <li data-target="#carousel-restaurante" data-slide-to="0" class="active"></li>
@@ -22,13 +60,13 @@
 	    <!-- Wrapper for slides -->
 	    <div class="carousel-inner" role="listbox">
 	      <div class="item active">
-	        <img src="img/wood-2.jpg" alt="Rustic barnwood background">
-		      </div>
+	        <img src="img/frame_1_fullscreen.jpg" alt="Rustic barnwood flooring background" >
+				</div>
 	      <div class="item">
-	        <img src="img/restaurant-2.jpg" alt="black and white image of decore">
+	        <img src="img/frame_2_fullscreen.jpg" alt="Patrons enjoying decore">
 	      </div>
 	      <div class="item">
-	        <img src="img/farm-2.jpg" alt="Farm">
+	        <img src="img/frame_3_fullscreen.jpg" alt="Farm looks to be yesteryear">
 	      </div>
 
 	    </div> <!-- class="carousel-inner"    -->
@@ -42,17 +80,136 @@
 	      <span class="sr-only">Next</span>
 	    </a>
 
-
-
-
-
-
 	  </div> <!-- id="carousel-flowers" -->
 
+  </div> <!--class="row container-fluid"-->
+
+	<div id="about" class="jumbotron container-fluid " >
+		<div class="row">
+			<div class="col-md-6 text-center">
+				   <br><br>
+           <p id="story"> Our Story</p>
+					 <p id="dream">One Man. One Dream. </p>
+			</div>
+			<div class="col-md-offset-1 col-md-4 col-md-offset-1 col-sm-12">
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+				 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+         <p id='date'>1989</p>
+			</div>
+		</div>
+
+  </div>
+
+	<div id="review" class="jumbotron container-fluid center">
+      <div class="row text-center">
+				<div class="shadow col-md-offset-2 col-md-8 col-md-offset-2">
+	      	 <p id="bee">Fresno Bee</p>
+					 <p>The freshest and best ingrediants come together to make some of the best food I have <br>
+					 ever eated. You can really taste the Central Valley in every bite. <br></p>
+	      </div>
+		  </div>
+
+	</div>
+
+
+
+	<div id="menu" class="jumbotron container-fluid">
+		<div class="row text-center">
+			<div class="col-md-offset-2 col-md-8 col-md-offset-2">
+				 <p id="menu-script">Menu</p>
+				<div class="row">
+					<ul id="meals" class="nav nav-tabs">
+					  <li class="active"><a href="#">Appetizer</a></li>
+					  <li><a href="#">Lunch</a></li>
+					  <li><a href="#">Dinner</a></li>
+					  <li><a href="#">Desert</a></li>
+					</ul>
+
+
+
+				  <div class="col-md-3">
+						<div class="thumbnail">
+							<img src="img\dip.jpg" alt="Hummas" class="image-responsive product-pic">
+							<div class="caption product-caption">
+								<h4>Appetizer 1</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . </p>
+  						</div>
+						</div>
+	        </div>
+	        <div class="col-md-3">
+						<div class="thumbnail">
+							<img src="img\eggplant.jpg" alt="Eggplant tomato drizzle" class="image-responsive product-pic">
+							<div class="caption product-caption">
+								<h4>Appetizer 2</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . </p>
+							</div>
+						</div>
+	        </div>
+	        <div class="col-md-3">
+						<div class="thumbnail">
+							<img src="img\meat.jpg" alt="Ham asparagus wraps" class="image-responsive product-pic">
+							<div class="caption product-caption">
+								<h4>Appetizer 3</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . </p>
+							</div>
+						</div>
+	        </div>
+	        <div class="col-md-3">
+						<div class="thumbnail">
+							<img src="img\bruschetta.jpg" alt="Bird Puzzle" class="image-responsive product-pic">
+							<div class="caption product-caption">
+								<h4>Appetizer 4</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco . </p>
+							</div>
+						</div>
+	        </div>
+
+				</div>
+
+
+
+
+
+
+
+
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div id="contact" class="jumbotron container-fluid ">
+		<div class="row">
+			<div class="col-md-offset-2 col-md-8 col-md-offset-2">
+        <h2>CONTACT US</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+        <div class="row">
+        	<div class="col-md-4">
+
+        	</div>
+					<div class="col-md-offset-2 col-md-6">
+						<h3>RESTAURANTE</h3>
+						<address>
+							 123 fulton St. <br>
+							 Fresno, CA 93728<br>
+							 P.(123) 456-7890
+						</address>
+						<div>
+	 		       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3197.5970772210712!2d-119.78638854345282!3d36.73223697040323!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xab092ce50c284a0a!2sBitwise+Industries!5e0!3m2!1sen!2sus!4v1472227918662" width="500" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+	 		     </div>
+					</div>
+        </div>
+			</div>
+		</div>
+	</div>
 
 
 	<!-- javascript	 -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+	<!-- <script src="js/bootstrap.min.js"></script> -->
 </body>
 </html>
