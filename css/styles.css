@@ -1,5 +1,5 @@
 
-@import 'https://fonts.googleapis.com/css?family=Lobster';
+@import 'https://fonts.googleapis.com/css?family=Lobster|Playfair+Display|Raleway';
 
 #restaurante-brand {
     width: 180px;
@@ -32,7 +32,9 @@
   margin-bottom: 0px;
 }
 
-
+/*.carousel-caption {
+  margin-bottom: 1em;
+}*/
 
 /*REPLACING THE SLIDE IN EFFECT WITH A FADE IN EFFECT*/
 /*https://codepen.io/transportedman/pen/NPWRGq*/
@@ -132,27 +134,33 @@ now override the 3.3 new styles for modern browsers & apply opacity
 
 
 #story {
-  font-size: 6em;
+  font-size: 4em;   /* 55px huh ?*/
   font-family: 'Lobster', cursive;
-  color: #F48057;
+  font-weight: 700;
+  color: #F8512f;
   text-shadow: 2px 2px 0px rgba(115,98,115,0.7);
 }
 
 #dream {
-  font-size: 2em;
-  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
+  text-transform: capitalize;
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 #story-text {
+  font-family: 'Raleway', sans-serif;
   font-size: 1em;
+
 }
 
 #date {
   position: absolute;
   top: 10px;
   left: 20px;
-  font-family: 'Lobster', cursive;
-  font-size: 10em;
+  font-family: 'Playfair Display', serif;
+  font-size: 12em;
+  font-weight: bold;
   color: rgba(0,0,0,0.2);
 }
 
@@ -200,25 +208,89 @@ now override the 3.3 new styles for modern browsers & apply opacity
 }
 
 #meals  li {
-  color: red;
   text-transform: uppercase;
   width: 25%;
 }
 
 #meals  li a {
-  color: red;
+  color: #f8512f;
 }
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+  color: #f8512f;
+}
+
+
+.thumbnail {
+  width: 115%;
+  margin-left: -15px !important;
+  margin-right: 0px !important;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 0px;
+  background-color: #FFF;
+}
+
+
+
+.product-caption {
+  padding: 10px !important;
+  font-family: 'Raleway', sans-serif;
+}
+
+.product-caption h3 {
+  font-weight: bold;
+}
+
+
+
+.product-pic {
+  width: 90%;
+  height: auto;
+  padding: 10px;
+  border: 1px solid #000;
+  margin: 5px 5px;
+}
+
+.thumbnail>.caption>p {
+  text-justify: center;
+}
+
 
 /*CONTACT*/
 
 #contact.jumbotron {
     min-height: 650px;
-    background-color: #F48057;
+    background-color:  #f04b0f;   /* #F48057;  */
     color: #FFF;
     background-size: 100% 100%;
 
 }
+#contact-form {
+  background-color: #F48057;
+}
 
+
+#not-robot {
+  position: relative;
+  top: 10px;
+  left: 5px;
+}
+#smallStuff {
+  color: blue;
+  font-size: 7px;
+  margin-left: 30%;
+}
+
+#contact-submit {
+  border-radius: 7px;
+  font-family: arial;
+  background-color: red;
+  margin-left: 40%;
+
+
+}
 /*MEDIA QUERIES*/
 
 @media only screen and (min-width: 20em){  /* 320 PIXELS */
